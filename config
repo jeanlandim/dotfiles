@@ -200,9 +200,14 @@ bindsym $mod+Return exec gnome-terminal --hide-menubar
 bindsym Print exec "gnome-screenshot"
 # dmenu
 bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#222222' -sf '#8D71FF' -fn 'Cantarell-7' -p 'RUN >:'"
+# lock screen
+bindsym $mod+Shift+p exec gnome-screensaver-command -l
 
 
-# Start apsp
+# Start app
 exec /home/jean/.config/i3/autostart.sh 
 exec /usr/bin/compton -cfz
 exec /usr/bin/nm-applet
+exec /usr/bin/gnome-screensaver
+
+
