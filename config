@@ -174,7 +174,8 @@ bar {
     urgent_workspace   #2F343A #900000 #FFFFFF
     binding_mode       #2F343A #900000 #FFFFFF
   }
-  status_command i3status
+  # status_command i3status
+    status_command i3blocks
 }
 
 # Define names for default workspaces for which we configure key bindings later on.
@@ -198,9 +199,10 @@ bindsym $mod+Return exec gnome-terminal --hide-menubar
 # takes a printscreen
 bindsym Print exec "gnome-screenshot"
 # dmenu
-bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#222222' -sf '#8D71FF' -fn 'monospace-10' -p 'RUN >:'"
+bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#222222' -sf '#8D71FF' -fn 'Cantarell-7' -p 'RUN >:'"
 
 
 # Start apsp
 exec /home/jean/.config/i3/autostart.sh 
 exec /usr/bin/compton -cfz
+exec /usr/bin/nm-applet
