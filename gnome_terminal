@@ -1,7 +1,8 @@
 [legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-background-color='rgb(34,34,34)'
+background-color='rgb(0,0,0)'
 bold-color-same-as-fg=true
 custom-command='tmux'
+exit-action='close'
 font='Ubuntu Mono 8'
 foreground-color='rgb(255,255,255)'
 login-shell=false
