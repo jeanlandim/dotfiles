@@ -12,5 +12,13 @@ done
 # save gnome terminal settings
 echo 'saving gnome-terminal settings'
 dconf dump /org/gnome/terminal/ > $DOTFILES_DIR/gnome_terminal
+# save fonts
+echo 'saving fonts dir'
+cp -R ~/.fonts/ $DOTFILES_DIR/fonts 
+
+git add .
+git commit -m 'updating'
+git push
+
 
 
