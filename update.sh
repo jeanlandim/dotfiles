@@ -16,6 +16,7 @@ dconf dump /org/gnome/terminal/ > $DOTFILES_DIR/gnome_terminal
 echo 'saving fonts dir'
 cp -R ~/.fonts/ $DOTFILES_DIR/fonts 
 
+cd $DOTFILES_DIR
 git add .
 git commit -m 'updating'
 git push
